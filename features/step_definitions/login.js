@@ -6,16 +6,15 @@ defineSupportCode(function({Given, When, Then}) {
 
     Given('I have already account on website', function (callback) {
         // Write code here that turns the phrase above into concrete actions
-        //return this.driver.get('https://localhost:3000/');
-        /*this.driver.manage().timeouts().implicitlyWait(30, TimeUnit.seconds);
-        this.driver.manage().window().maximize();
-        return this.driver.get('https://localhost:3000/');*/
         callback(null, 'I am already user of website');
     });
 
     When('I am on the home page', function () {
         // Write code here that turns the phrase above into concrete actions
-        return this.driver.get('http://localhost:3000/');
+        this.driver.get('http://localhost:3000/');
+        var xpath = "//*[contains(text(),'Express')]";
+        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        return this.driver.wait(condition, 10000);
 
     });
 
