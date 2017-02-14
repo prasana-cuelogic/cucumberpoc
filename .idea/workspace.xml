@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af62e1cd-84c9-42cf-884c-0f8e7da97bee" name="Default" comment="Added 3 new features for the 3BL Media project.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/comparative.feature" afterPath="$PROJECT_DIR$/features/comparative.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/report_tab.feature" afterPath="$PROJECT_DIR$/features/report_tab.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/browser_steps.js" afterPath="$PROJECT_DIR$/features/step_definitions/browser_steps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/comparative.js" afterPath="$PROJECT_DIR$/features/step_definitions/comparative.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/report_tab.js" afterPath="$PROJECT_DIR$/features/step_definitions/report_tab.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/summary_report.js" afterPath="$PROJECT_DIR$/features/step_definitions/summary_report.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/summary_report.feature" afterPath="$PROJECT_DIR$/features/summary_report.feature" />
     </list>
@@ -26,21 +23,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="comparative.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/comparative.feature">
+      <file leaf-file-name="summary_report.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/summary_report.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="148">
+              <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comparative.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="summary_report.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/features/step_definitions/summary_report.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="60" column="40" lean-forward="false" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comparative.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/step_definitions/comparative.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="28" column="76" lean-forward="true" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+            <state relative-caret-position="799">
+              <caret line="89" column="7" lean-forward="true" selection-start-line="89" selection-start-column="7" selection-end-line="89" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -67,6 +74,11 @@
       <find>I am on the login page with</find>
       <find>class</find>
       <find>By.className</find>
+      <find>I search for</find>
+      <find>click on the</find>
+      <find>form-submit</find>
+      <find>edit</find>
+      <find>I click on the</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -89,15 +101,15 @@
         <option value="$PROJECT_DIR$/features/mdocumentation.feature" />
         <option value="$PROJECT_DIR$/features/login.feature" />
         <option value="$PROJECT_DIR$/features/comparative.js" />
-        <option value="$PROJECT_DIR$/features/report_tab.feature" />
-        <option value="$PROJECT_DIR$/features/summary_report.feature" />
-        <option value="$PROJECT_DIR$/features/step_definitions/summary_report.js" />
         <option value="$PROJECT_DIR$/features/step_definitions/browser_steps.js" />
         <option value="$PROJECT_DIR$/features/step_definitions/home.js" />
         <option value="$PROJECT_DIR$/features/step_definitions/report_tab.js" />
         <option value="$PROJECT_DIR$/features/step_definitions/login.js" />
-        <option value="$PROJECT_DIR$/features/comparative.feature" />
         <option value="$PROJECT_DIR$/features/step_definitions/comparative.js" />
+        <option value="$PROJECT_DIR$/features/comparative.feature" />
+        <option value="$PROJECT_DIR$/features/report_tab.feature" />
+        <option value="$PROJECT_DIR$/features/summary_report.feature" />
+        <option value="$PROJECT_DIR$/features/step_definitions/summary_report.js" />
       </list>
     </option>
   </component>
@@ -303,7 +315,7 @@
       <workItem from="1486364507471" duration="9842000" />
       <workItem from="1487006627849" duration="3712000" />
       <workItem from="1487054287461" duration="4687000" />
-      <workItem from="1487065118371" duration="14238000" />
+      <workItem from="1487065118371" duration="18458000" />
     </task>
     <task id="LOCAL-00001" summary="Added 3 new features for the 3BL Media project.">
       <created>1487056315101</created>
@@ -316,7 +328,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57069000" />
+    <option name="totallyTimeSpent" value="61289000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -337,9 +349,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24460967" sideWeight="0.5630841" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3130016" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3130016" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32423756" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32423756" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -660,22 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/summary_report.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="25" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/report_tab.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="24" column="36" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="24" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/mdocumentation.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -688,14 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="10" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="19" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/summary_report.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="17" column="59" lean-forward="true" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -716,14 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/comparative.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/step_definitions/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -740,10 +720,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/features/comparative.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/report_tab.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="57" lean-forward="true" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/features/step_definitions/comparative.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="28" column="76" lean-forward="true" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
+        <state relative-caret-position="799">
+          <caret line="89" column="7" lean-forward="true" selection-start-line="89" selection-start-column="7" selection-end-line="89" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/summary_report.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/summary_report.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="60" column="40" lean-forward="false" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
           <folding />
         </state>
       </provider>
