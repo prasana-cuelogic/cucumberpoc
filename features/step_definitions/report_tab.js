@@ -4,7 +4,7 @@ var {defineSupportCode} = require('cucumber');
 
 defineSupportCode(function({Given, When, Then}) {
 
-    Given('I am on the login page with {arg1:stringInDoubleQuotes} title', function (arg1, callback) {
+    /*Given('I am on the login page with {arg1:stringInDoubleQuotes} title', function (arg1, callback) {
         // Write code here that turns the phrase above into concrete actions
         callback(null, 'pending');
     });
@@ -22,7 +22,7 @@ defineSupportCode(function({Given, When, Then}) {
     Then('I should redirect on the home page.', function (callback) {
         // Write code here that turns the phrase above into concrete actions
         callback(null, 'pending');
-    });
+    });*/
 
     Given('I am on the home page and logged in with client username and password.', function (callback) {
         // Write code here that turns the phrase above into concrete actions
