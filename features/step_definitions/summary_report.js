@@ -58,7 +58,7 @@ defineSupportCode(function({Given, When, Then}) {
         this.driver.wait(condition, 5000);
 
         this.driver.findElement(seleniumWebdriver.By.id("edit-field-summary-report-status-und")).then(function(element) {
-            return element.sendKeys(arg2);
+            return element.sendKeys("Inactive");
         });
     });
 
