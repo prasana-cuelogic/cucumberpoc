@@ -2,8 +2,8 @@ require('chromedriver');
 var seleniumWebdriver = require('selenium-webdriver');
 var {defineSupportCode} = require('cucumber');
 
-defineSupportCode(function({Given, When, Then}) {
-
+defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
+    setDefaultTimeout(20 * 1000);
     //Edit Scenario
     Then('I am going to {arg1:stringInDoubleQuotes} page.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
@@ -75,31 +75,38 @@ defineSupportCode(function({Given, When, Then}) {
         var xpath = "//*[contains(text(),'Summary Report')]";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
         return this.driver.wait(condition, 5000);
-
     });
-
 
     //Delete Scenario
-    Given('I am on the {arg1:stringInDoubleQuotes} page.', function (arg1, callback) {
+    When('Click on the delete link.', function () {
         // Write code here that turns the phrase above into concrete actions
-        callback(null, 'pending');
+        var xpath = "html/body/div[3]/div[2]/div[2]/div/div/div/div[2]/table/tbody/tr/td[11]/a";
+        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        this.driver.wait(condition, 5000);
+        return this.driver.findElement(seleniumWebdriver.By.xpath("html/body/div[3]/div[2]/div[2]/div/div/div/div[2]/table/tbody/tr/td[11]/a")).click();
     });
 
-    When('Click on the delete link.', function (callback) {
+    Then('I should redirect on the delete confirmation page with message {arg1:stringInDoubleQuotes}', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
-        callback(null, 'pending');
+        var xpath = "//*[contains(text(),'" + arg1 + "')]";
+        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        return this.driver.wait(condition, 10000);
     });
 
-    Then('I should redirect on the delete confirmation page with message {arg1:stringInDoubleQuotes}', function (arg1, callback) {
+    When('I click on the {arg1:stringInDoubleQuotes} button.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
-        callback(null, 'pending');
+        var xpath = "//*[contains(text(),'This action cannot be undone.')]";
+        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        this.driver.wait(condition, 5000);
+        this.driver.findElement(seleniumWebdriver.By.className("form-submit")).then(function (element) {
+            return element.click();
+        });
     });
 
-    Then('Record gets deleted and I redirected on the listing page.', function (callback) {
+    Then('Record gets deleted and I redirected on the listing page.', function () {
         // Write code here that turns the phrase above into concrete actions
-        callback(null, 'pending');
+        var xpath = "//*[contains(text(),'Summary Report')]";
+        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        return this.driver.wait(condition, 10000);
     });
-
-
-
 });
