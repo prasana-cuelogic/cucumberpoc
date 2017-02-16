@@ -4,54 +4,46 @@ var {defineSupportCode} = require('cucumber');
 
 defineSupportCode(function({Given, When, Then}) {
 
-    /*Given('I am on the login page with {arg1:stringInDoubleQuotes} title', function (arg1, callback) {
+    Then('I will be redirect on client selection page.', function () {
         // Write code here that turns the phrase above into concrete actions
-        callback(null, 'pending');
+        return this.driver.get('http://test1.3blmedia.com/client-multiple-login?destination=Dashboard/Analytics/Views');
+
     });
 
-    When('I add correct {arg1:stringInDoubleQuotes} and {arg2:stringInDoubleQuotes}', function (arg1, arg2, callback) {
+    When('I select {arg1:stringInDoubleQuotes} client and go on the Analytic page.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
-        callback(null, 'pending');
+        /*var xpath = '//*[@id="content"]/div/div/div[2]/div[3]/div/span/div/a/div[2]';
+         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+         this.driver.wait(condition, 10000);
+
+         return this.driver.findElement(seleniumWebdriver.By.linkText(arg1)).then(function(element) {
+         return element.click();
+         });*/
     });
 
-    When('click on the {arg1:stringInDoubleQuotes} button', function (arg1, callback) {
+    Then('I will be on the {arg1:stringInDoubleQuotes} tab.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
-        callback(null, 'pending');
+        // Write code here that turns the phrase above into concrete actions
+        var xpath = "//*[contains(text(),'" + arg1 + "')]";
+        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        return this.driver.wait(condition, 10000);
     });
 
-    Then('I should redirect on the home page.', function (callback) {
+    Then('I click on the {arg1:stringInDoubleQuotes} Link.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
-        callback(null, 'pending');
-    });*/
-
-    Given('I am on the home page and logged in with client username and password.', function (callback) {
-        // Write code here that turns the phrase above into concrete actions
-        callback(null, 'pending');
+        var xpath = "//*[contains(text(),'" + arg1 + "')]";
+        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        this.driver.wait(condition, 10000);
+        return this.driver.findElement(seleniumWebdriver.By.linkText(arg1)).then(function (element) {
+            return element.click();
+        });
     });
 
-    When('I click on the {arg1:stringInDoubleQuotes} Link.', function (arg1, callback) {
+    Then('I will be Report page and page title will be {arg1:stringInDoubleQuotes}', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
-        callback(null, 'pending');
-    });
-
-    Then('I will be on the {arg1:stringInDoubleQuotes} tab.', function (arg1, callback) {
-        // Write code here that turns the phrase above into concrete actions
-        callback(null, 'pending');
-    });
-
-    Then('I click on the {arg1:stringInDoubleQuotes} Link.', function (arg1, callback) {
-        // Write code here that turns the phrase above into concrete actions
-        callback(null, 'pending');
-    });
-
-    Then('I will be Report page and page title will be {arg1:stringInDoubleQuotes}', function (arg1, callback) {
-        // Write code here that turns the phrase above into concrete actions
-        callback(null, 'pending');
-    });
-
-    Given('I am on the {arg1:stringInDoubleQuotes} tab.', function (arg1, callback) {
-        // Write code here that turns the phrase above into concrete actions
-        callback(null, 'pending');
+        var xpath = "//*[contains(text(),'" + arg1 + "')]";
+        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        return this.driver.wait(condition, 10000);
     });
 
     When('I click on the Email Icon of {arg1:stringInDoubleQuotes}.', function (arg1, callback) {
@@ -78,5 +70,4 @@ defineSupportCode(function({Given, When, Then}) {
         // Write code here that turns the phrase above into concrete actions
         callback(null, 'pending');
     });
-
 });
