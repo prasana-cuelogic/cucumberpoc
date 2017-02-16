@@ -20,8 +20,6 @@ router.post('/', function(req, res, next) {
     } else {
         res.render('user', { title: 'User Login', message:"Enter correct user name and password"});
     }
-
-
 });
 
 module.exports = router;

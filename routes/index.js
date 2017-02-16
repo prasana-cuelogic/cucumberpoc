@@ -9,10 +9,10 @@ router.get('/', function(req, res, next) {
 }).get('/cucumber', function () {
     output.cucumberOutPut(function (data) {
         var service = "Gmail";
-        var auth = {email:'prasana.alawekar@cuelogic.co.in', password: ''};
+        var auth = {email:'cucumberpoc@gmail.com', password: 'cuelogic'};
         var attrs = {
             from: 'Prasana A',
-            to: 'santosh.jagtap@cuelogic.co.in',
+            to: 'santosh.jagtap@cuelogic.co.in, prasana.alawekar@cuelogic.co.in',
             subject: 'Cucumber Output ✔',
             text: 'Please check execution report',
             html: '<b>Hello world ?</b>'+data
