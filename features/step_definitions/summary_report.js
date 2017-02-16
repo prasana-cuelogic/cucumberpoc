@@ -3,7 +3,7 @@ var seleniumWebdriver = require('selenium-webdriver');
 var {defineSupportCode} = require('cucumber');
 
 defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
-    setDefaultTimeout(20 * 1000);
+    setDefaultTimeout(40 * 1000);
     //Edit Scenario
     Then('I am going to {arg1:stringInDoubleQuotes} page.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions

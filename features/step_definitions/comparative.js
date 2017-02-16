@@ -3,7 +3,7 @@ var seleniumWebdriver = require('selenium-webdriver');
 var {defineSupportCode} = require('cucumber');
 
 defineSupportCode(function({Given, When, Then, setDefaultTimeout}) {
-    setDefaultTimeout(20 * 1000);
+    setDefaultTimeout(40 * 1000);
 
     Given('I am on the home page', function () {
         // Write code here that turns the phrase above into concrete actions
