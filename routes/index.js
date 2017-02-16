@@ -5,6 +5,8 @@ var nodemailer = require('./mailer');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+    res.render('index', { title: 'Express' });
+}).get('/cucumber', function () {
     output.cucumberOutPut(function (data) {
         var service = "Gmail";
         var auth = {email:'prasana.alawekar@cuelogic.co.in', password: ''};
@@ -26,7 +28,6 @@ router.get('/', function(req, res, next) {
         });
         console.log(data);
     });
-    res.render('index', { title: 'Express' });
 });
 
 module.exports = router;
