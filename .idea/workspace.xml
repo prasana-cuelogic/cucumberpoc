@@ -2,9 +2,182 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af62e1cd-84c9-42cf-884c-0f8e7da97bee" name="Default" comment="Added 3 new features for the 3BL Media project.">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/features/login.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/features/mdocumentation.feature" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/features/step_definitions/home.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/features/step_definitions/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/nopt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/.bin/semver" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/abbrev/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/abbrev/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/abbrev/abbrev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/abbrev/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/LICENCE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/readme.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/broken.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/broken.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/chain-class.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/env.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/find-file.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/get.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/ignore-unfound-file.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/ini.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/config-chain/test/save.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/ini/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/ini/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/ini/ini.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/ini/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/bin/nopt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/examples/my-program.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/lib/nopt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/nopt/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/config-defs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/lib/find-prefix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/lib/get-credentials-by-uri.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/lib/load-cafile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/lib/load-prefix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/lib/load-uid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/lib/nerf-dart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/lib/set-credentials-by-uri.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/lib/set-user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/npmconf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/test/00-setup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/test/builtin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/test/certfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/test/credentials.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/test/fixtures/.npmrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/test/fixtures/builtin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/test/fixtures/globalconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/test/fixtures/multi-ca" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/test/fixtures/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/test/fixtures/userconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/test/project.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/test/save.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/npmconf/test/semver-tag.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/os-homedir/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/os-homedir/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/os-homedir/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/os-homedir/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/osenv/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/osenv/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/osenv/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/osenv/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/osenv/osenv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/osenv/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/osenv/test/unix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/osenv/test/windows.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/osenv/x.tap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/proto-list/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/proto-list/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/proto-list/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/proto-list/proto-list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/proto-list/test/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sax/LICENSE-W3C.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/atoms/isDisplayed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/bin/semver" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/foot.js.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/head.js.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/semver.browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/semver.browser.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/semver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/semver.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/semver.min.js.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/test/amd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/test/big-numbers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/test/clean.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/test/gtr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/test/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/test/ltr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/test/major-minor-patch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/semver/test/no-module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/uid-number/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/uid-number/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/uid-number/get-uid-gid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/uid-number/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/uid-number/uid-number.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chromedriver/lib/chromedriver/chromedriver" afterPath="$PROJECT_DIR$/node_modules/chromedriver/lib/chromedriver/chromedriver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chromedriver/lib/chromedriver/chromedriver_mac64.zip" afterPath="$PROJECT_DIR$/node_modules/chromedriver/lib/chromedriver/chromedriver_mac64.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/firefox/webdriver.xpi" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/firefox/webdriver.xpi" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/comparative.js" afterPath="$PROJECT_DIR$/features/step_definitions/comparative.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/summary_report.feature" afterPath="$PROJECT_DIR$/features/summary_report.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/asyncGenerator.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/asyncGenerator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/asyncIterator.js" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/helpers/asyncIterator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/babel-runtime/package.json" afterPath="$PROJECT_DIR$/node_modules/babel-runtime/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chromedriver/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/chromedriver/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chromedriver/Dockerfile" afterPath="$PROJECT_DIR$/node_modules/chromedriver/Dockerfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chromedriver/README.md" afterPath="$PROJECT_DIR$/node_modules/chromedriver/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chromedriver/appveyor.yml" afterPath="$PROJECT_DIR$/node_modules/chromedriver/appveyor.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chromedriver/bin/chromedriver" afterPath="$PROJECT_DIR$/node_modules/chromedriver/bin/chromedriver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chromedriver/install.js" afterPath="$PROJECT_DIR$/node_modules/chromedriver/install.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chromedriver/lib/chromedriver.js" afterPath="$PROJECT_DIR$/node_modules/chromedriver/lib/chromedriver.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chromedriver/package.json" afterPath="$PROJECT_DIR$/node_modules/chromedriver/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/kew/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/kew/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/kew/README.md" afterPath="$PROJECT_DIR$/node_modules/kew/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/kew/kew.js" afterPath="$PROJECT_DIR$/node_modules/kew/kew.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/kew/package.json" afterPath="$PROJECT_DIR$/node_modules/kew/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/kew/test/static.js" afterPath="$PROJECT_DIR$/node_modules/kew/test/static.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/once/README.md" afterPath="$PROJECT_DIR$/node_modules/once/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/once/once.js" afterPath="$PROJECT_DIR$/node_modules/once/once.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/once/package.json" afterPath="$PROJECT_DIR$/node_modules/once/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/regenerator-runtime/package.json" afterPath="$PROJECT_DIR$/node_modules/regenerator-runtime/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/regenerator-runtime/runtime.js" afterPath="$PROJECT_DIR$/node_modules/regenerator-runtime/runtime.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/rimraf/bin.js" afterPath="$PROJECT_DIR$/node_modules/rimraf/bin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/rimraf/package.json" afterPath="$PROJECT_DIR$/node_modules/rimraf/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/rimraf/rimraf.js" afterPath="$PROJECT_DIR$/node_modules/rimraf/rimraf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sax/lib/sax.js" afterPath="$PROJECT_DIR$/node_modules/sax/lib/sax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sax/package.json" afterPath="$PROJECT_DIR$/node_modules/sax/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/CHANGES.md" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/CHANGES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/README.md" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/chrome.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/chrome.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/edge.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/edge.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/firefox/binary.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/firefox/binary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/firefox/extension.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/firefox/extension.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/firefox/index.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/firefox/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/index.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/README" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/actions.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/actions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/atoms/getAttribute.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/atoms/getAttribute.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/by.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/by.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/capabilities.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/capabilities.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/error.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/error.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/events.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/events.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/http.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/http.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/input.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/input.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/promise.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/promise.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/symbols.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/symbols.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/test/index.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/test/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/until.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/until.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/webdriver.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/lib/webdriver.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/opera.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/opera.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/package.json" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/safari.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/safari.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/test/firefox/firefox_test.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/test/firefox/firefox_test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/test/lib/http_test.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/test/lib/http_test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/test/lib/promise_test.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/test/lib/promise_test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/test/lib/until_test.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/test/lib/until_test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/selenium-webdriver/testing/index.js" afterPath="$PROJECT_DIR$/node_modules/selenium-webdriver/testing/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/email.js" afterPath="$PROJECT_DIR$/routes/email.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/users.js" afterPath="$PROJECT_DIR$/routes/users.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,21 +195,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+            <state relative-caret-position="213">
+              <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mailer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/mailer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/users.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+            <state relative-caret-position="360">
+              <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -45,9 +228,51 @@
       <file leaf-file-name="email.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/email.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+            <state relative-caret-position="120">
+              <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comparative.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/step_definitions/comparative.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="60" lean-forward="true" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comparative.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/comparative.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="45" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="report_tab.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/report_tab.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="66" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="summary_report.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/summary_report.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <marker date="1487677180000" expanded="true" signature="160:646" ph="Scenario: Update data for summary report." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,23 +322,23 @@
         <option value="$PROJECT_DIR$/views/user_list.ejs" />
         <option value="$PROJECT_DIR$/features/documentation.feature" />
         <option value="$PROJECT_DIR$/views/user.ejs" />
-        <option value="$PROJECT_DIR$/features/mdocumentation.feature" />
-        <option value="$PROJECT_DIR$/features/login.feature" />
         <option value="$PROJECT_DIR$/features/comparative.js" />
         <option value="$PROJECT_DIR$/features/step_definitions/browser_steps.js" />
-        <option value="$PROJECT_DIR$/features/step_definitions/home.js" />
-        <option value="$PROJECT_DIR$/features/step_definitions/login.js" />
-        <option value="$PROJECT_DIR$/features/step_definitions/comparative.js" />
         <option value="$PROJECT_DIR$/features/step_definitions/summary_report.js" />
-        <option value="$PROJECT_DIR$/features/report_tab.feature" />
         <option value="$PROJECT_DIR$/features/step_definitions/report_tab.js" />
         <option value="$PROJECT_DIR$/routes/mailer.js" />
-        <option value="$PROJECT_DIR$/features/summary_report.feature" />
-        <option value="$PROJECT_DIR$/features/comparative.feature" />
-        <option value="$PROJECT_DIR$/routes/email.js" />
         <option value="$PROJECT_DIR$/routes/cucumber_output_by_email.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/users.js" />
+        <option value="$PROJECT_DIR$/routes/email.js" />
+        <option value="$PROJECT_DIR$/features/step_definitions/home.js" />
+        <option value="$PROJECT_DIR$/features/comparative.feature" />
+        <option value="$PROJECT_DIR$/features/report_tab.feature" />
+        <option value="$PROJECT_DIR$/features/summary_report.feature" />
+        <option value="$PROJECT_DIR$/features/step_definitions/login.js" />
+        <option value="$PROJECT_DIR$/features/step_definitions/comparative.js" />
+        <option value="$PROJECT_DIR$/features/login.feature" />
+        <option value="$PROJECT_DIR$/features/mdocumentation.feature" />
         <option value="$PROJECT_DIR$/routes/index.js" />
       </list>
     </option>
@@ -132,7 +357,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="3" />
     <option name="y" value="23" />
-    <option name="width" value="1346" />
+    <option name="width" value="1360" />
     <option name="height" value="741" />
   </component>
   <component name="ProjectView">
@@ -150,8 +375,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -192,6 +417,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cucumber-poc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cucumber-poc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="features" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="step_definitions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -206,11 +449,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/features/step_definitions" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/features/step_definitions" />
     </key>
   </component>
   <component name="RunManager" selected="Cucumber.js.documentation.feature">
@@ -320,6 +563,9 @@
       <workItem from="1487065118371" duration="18835000" />
       <workItem from="1487229945386" duration="4743000" />
       <workItem from="1487240132436" duration="8065000" />
+      <workItem from="1487334872871" duration="883000" />
+      <workItem from="1487572940781" duration="1189000" />
+      <workItem from="1487657291677" duration="1147000" />
     </task>
     <task id="LOCAL-00001" summary="Added 3 new features for the 3BL Media project.">
       <created>1487056315101</created>
@@ -339,7 +585,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74474000" />
+    <option name="totallyTimeSpent" value="77693000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -351,31 +597,49 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="23" width="1346" height="741" extended-state="0" />
+    <frame x="3" y="23" width="1360" height="741" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24452831" sideWeight="0.42042756" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24197163" sideWeight="0.41330168" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24452831" sideWeight="0.57957244" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3130016" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24452831" sideWeight="0.58669835" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32423756" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17977528" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3130016" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -597,7 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -630,44 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/login.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="14" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="24" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/mdocumentation.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/comparative.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="5" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/step_definitions/report_tab.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -688,7 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="554" column="18" lean-forward="false" selection-start-line="554" selection-start-column="18" selection-end-line="554" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,14 +920,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="117" column="4" lean-forward="false" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/summary_report.feature">
+    <entry file="file://$PROJECT_DIR$/routes/cucumber_output_by_email.js" />
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="-17">
+          <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -716,58 +947,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/mailer.js">
+    <entry file="file://$PROJECT_DIR$/features/report_tab.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="54" />
+        <state relative-caret-position="120">
+          <caret line="8" column="66" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/report_tab.feature">
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/login.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="66" lean-forward="false" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+          <caret line="8" column="30" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="8" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/mdocumentation.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/summary_report.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <marker date="1487677180000" expanded="true" signature="160:646" ph="Scenario: Update data for summary report." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/comparative.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="60" lean-forward="true" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/email.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/cucumber_output_by_email.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        <state relative-caret-position="120">
+          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+        <state relative-caret-position="213">
+          <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/mailer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
           <folding />
         </state>
       </provider>

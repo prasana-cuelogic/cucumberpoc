@@ -5,10 +5,10 @@ var {defineSupportCode} = require('cucumber');
 defineSupportCode(function({Given, When, Then, setDefaultTimeout}) {
     setDefaultTimeout(40 * 1000);
 
-    Given('I am on the home page', function () {
+    /*Given('I am on the home page', function () {
         // Write code here that turns the phrase above into concrete actions
         return this.driver.get('http://test1.3blmedia.com');
-    });
+    });*/
 
     When('I login with username and password', function () {
         // Write code here that turns the phrase above into concrete actions

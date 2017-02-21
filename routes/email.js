@@ -5,5 +5,5 @@ function execute(command, callback){
 };
 
 module.exports.cucumberOutPut = function(callback){
-    execute("./node_modules/.bin/cucumber.js ", callback);
+    execute("./node_modules/.bin/cucumber.js -f pretty", callback);
 };

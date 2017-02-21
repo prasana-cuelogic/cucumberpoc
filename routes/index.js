@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 }).get('/cucumber', function () {
     output.cucumberOutPut(function (data) {
         var service = "Gmail";
-        var auth = {email:'cucumberpoc@gmail.com', password: 'cuelogic'};
+        var auth = {email:'cucumberpoc@gmail.com', password: ''};
         var attrs = {
             from: 'Prasana A',
             to: 'santosh.jagtap@cuelogic.co.in, prasana.alawekar@cuelogic.co.in',
