@@ -1,6 +1,9 @@
 require('chromedriver');
+var assert = require('assert');
 var seleniumWebdriver = require('selenium-webdriver');
 var {defineSupportCode} = require('cucumber');
+var currentUrl;
+var new_window_url;
 
 defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
     setDefaultTimeout(40 * 1000);
@@ -76,6 +79,38 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
         return this.driver.wait(condition, 5000);
     });
+
+    //Preview Scenario
+    When('Click on the preview link', function () {
+        // Write code here that turns the phrase above into concrete actions
+        var xpath = "html/body/div[3]/div[2]/div[2]/div/div/div/div[2]/table/tbody/tr[1]/td[8]/a";
+        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        this.driver.wait(condition, 5000);
+        return this.driver.findElement(seleniumWebdriver.By.xpath( "html/body/div[3]/div[2]/div[2]/div/div/div/div[2]/table/tbody/tr/td[8]/a")).click();
+    });
+
+    Then('report should be open in the new tab', function () {
+        var that = this.driver;
+        this.driver.getAllWindowHandles().then(function (handles) {
+            that.switchTo().window(handles[1]).then(function () {
+                that.getTitle().then( function(the_title){
+                    assert.equal("Quarterly Summary Report Q2-2016", the_title);
+                });
+            });
+        });
+    });
+
+    Then('report title should be {arg1:stringInDoubleQuotes}', function (arg1) {
+        var that = this.driver;
+        this.driver.getAllWindowHandles().then(function (handles) {
+            that.switchTo().window(handles[1]).then(function () {
+                var xpath = "//*[contains(text(),'Summary Report')]";
+                var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+                return that.wait(condition, 5000);
+            });
+        });
+    });
+
 
     //Delete Scenario
     When('Click on the delete link.', function () {
