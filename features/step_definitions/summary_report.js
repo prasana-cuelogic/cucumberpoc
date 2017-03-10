@@ -16,11 +16,11 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         return this.driver.wait(condition, 5000);
     });
 
-    When('I search for {arg1:stringInDoubleQuotes} companies report of quarter {arg2:stringInDoubleQuotes} for year {arg3:stringInDoubleQuotes}', function (arg1, arg2, arg3) {
-        // Write code here that turns the phrase above into concrete actions
-        this.driver.findElement(seleniumWebdriver.By.id("edit-title")).then(function(element) {
-            return element.sendKeys(arg1);
-        });
+           When('I search for {arg1:stringInDoubleQuotes} companies report of quarter {arg2:stringInDoubleQuotes} for year {arg3:stringInDoubleQuotes}', function (arg1, arg2, arg3) {
+            // Write code here that turns the phrase above into concrete actions
+            this.driver.findElement(seleniumWebdriver.By.id("edit-title")).then(function(element) {
+                return element.sendKeys(arg1);
+            });
 
         this.driver.findElement(seleniumWebdriver.By.id("edit-field-quarter-value")).then(function(element) {
             return element.sendKeys(arg2);
@@ -54,10 +54,10 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         return this.driver.wait(condition, 10000);
     });
 
-    When('I update {arg1:stringInDoubleQuotes} to Inactive {arg2:stringInDoubleQuotes} and save data.', function (arg1, arg2) {
+    When('I update {arg1:stringInDoubleQuotes} to {arg2:stringInDoubleQuotes} and save data.', function (arg1, arg2) {
         // Write code here that turns the phrase above into concrete actions
         var xpath = "html/body/div[3]/div[2]/div[2]/div/div/form/div/div[25]/div/select";
-        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        var condition = seleniumWebdriver.until.elementLocated(seleniumWebdriver.By.id("edit-field-summary-report-status-und"));
         this.driver.wait(condition, 5000);
 
         this.driver.findElement(seleniumWebdriver.By.id("edit-field-summary-report-status-und")).then(function(element) {
@@ -83,7 +83,7 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
     //Preview Scenario
     When('Click on the preview link', function () {
         // Write code here that turns the phrase above into concrete actions
-        var xpath = "html/body/div[3]/div[2]/div[2]/div/div/div/div[2]/table/tbody/tr[1]/td[8]/a";
+        var xpath = "html/body/div[3]/div[2]/div[2]/div/div/div/div[2]/table/tbody/tr/td[8]/a";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
         this.driver.wait(condition, 5000);
         return this.driver.findElement(seleniumWebdriver.By.xpath( "html/body/div[3]/div[2]/div[2]/div/div/div/div[2]/table/tbody/tr/td[8]/a")).click();
@@ -112,6 +112,26 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
     });
 
 
+    // View client link
+    When('click on the view link', function () {
+        // Write code here that turns the phrase above into concrete actions
+        var xpath = "html/body/div[3]/div[2]/div[2]/div/div/div/div[2]/table/tbody/tr/td[9]/a";
+        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        this.driver.wait(condition, 5000);
+        return this.driver.findElement(seleniumWebdriver.By.xpath( "html/body/div[3]/div[2]/div[2]/div/div/div/div[2]/table/tbody/tr/td[9]/a")).click();
+    });
+
+    Then('report should be open in the new tab', function () {
+        var that = this.driver;
+        this.driver.getAllWindowHandles().then(function (handles) {
+            that.switchTo().window(handles[1]).then(function () {
+                that.getTitle().then( function(the_title){
+                    assert.equal("Quarterly Summary Report Q2-2016", the_title);
+                });
+            });
+        });
+    });
+
     //Delete Scenario
     When('Click on the delete link.', function () {
         // Write code here that turns the phrase above into concrete actions
@@ -138,9 +158,9 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         });
     });
 
-    Then('Record gets deleted and I redirected on the listing page.', function () {
+    Then('Record gets deleted and I redirected on the {arg1:stringInDoubleQuotes} listing page.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
-        var xpath = "//*[contains(text(),'Summary Report')]";
+        var xpath = "//*[contains(text(),'"+arg1+"')]";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
         return this.driver.wait(condition, 10000);
     });
