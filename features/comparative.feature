@@ -75,7 +75,7 @@ Feature: Clone Comparative summary report.
     Then  I should redirect on the "http://test1.3blmedia.com/admin/comparative-summary-report" link and "Comparative Quarterly Summary Report" page
     When  I search for "BJ's Wholesale Club" companies report of quarter "4" for year "2016"
     And click on the "Preview" link
-    Then "BJ's Wholesale Club" report should be open in the new tab
+    Then "Comparative Quarterly Summary Report Q4-2016" report should be open in the new tab
     And report title should be "BJ's Wholesale Club"
 
   Scenario: View Comparative Quarterly Summary Report
@@ -84,5 +84,5 @@ Feature: Clone Comparative summary report.
     Then  I should redirect on the "http://test1.3blmedia.com/admin/comparative-summary-report" link and "Comparative Quarterly Summary Report" page
     When  I search for "BJ's Wholesale Club" companies report of quarter "4" for year "2016"
     And click on the "Preview" link
-    Then "BJ's Wholesale Club" report should be open in the new tab
+    Then "Comparative Quarterly Summary Report Q4-2016" report should be open in the new tab
     And report title should be "BJ's Wholesale Club"
