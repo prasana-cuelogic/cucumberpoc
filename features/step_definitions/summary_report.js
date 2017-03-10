@@ -30,10 +30,6 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
             return element.sendKeys(arg3);
         });
 
-        var xpath = "html/body/div[3]/div[2]/div[2]/div/div/div/div[1]/form/div/div/div/div[9]/input";
-        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
-        this.driver.wait(condition, 5000);
-
         this.driver.findElement(seleniumWebdriver.By.className("form-submit")).then(function(element) {
             return element.click();
         });
@@ -61,11 +57,11 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         this.driver.wait(condition, 5000);
 
         this.driver.findElement(seleniumWebdriver.By.id("edit-field-summary-report-status-und")).then(function(element) {
-            return element.sendKeys("Inactive");
+            return element.sendKeys(arg2);
         });
     });
 
-    Then('Record gets updated and I redirected on the listing page.', function () {
+    Then('Record gets updated and I redirected on the {arg1:stringInDoubleQuotes} listing page.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
         var xpath = "html/body/div[3]/div[2]/div[2]/div/div/form/div/input[4]";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
@@ -75,7 +71,7 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
             return element.click();
         });
 
-        var xpath = "//*[contains(text(),'Summary Report')]";
+        var xpath = "//*[contains(text(),'"+arg1+"')]";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
         return this.driver.wait(condition, 5000);
     });
@@ -89,12 +85,12 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         return this.driver.findElement(seleniumWebdriver.By.xpath( "html/body/div[3]/div[2]/div[2]/div/div/div/div[2]/table/tbody/tr/td[8]/a")).click();
     });
 
-    Then('report should be open in the new tab', function () {
+    Then('{arg1:stringInDoubleQuotes} report should be open in the new tab', function (arg1) {
         var that = this.driver;
         this.driver.getAllWindowHandles().then(function (handles) {
             that.switchTo().window(handles[1]).then(function () {
                 that.getTitle().then( function(the_title){
-                    assert.equal("Quarterly Summary Report Q2-2016", the_title);
+                    assert.equal(arg1, the_title);
                 });
             });
         });
@@ -104,7 +100,7 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         var that = this.driver;
         this.driver.getAllWindowHandles().then(function (handles) {
             that.switchTo().window(handles[1]).then(function () {
-                var xpath = "//*[contains(text(),'Summary Report')]";
+                var xpath = "//*[contains(text(),arg1)]";
                 var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
                 return that.wait(condition, 5000);
             });
@@ -119,17 +115,6 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
         this.driver.wait(condition, 5000);
         return this.driver.findElement(seleniumWebdriver.By.xpath( "html/body/div[3]/div[2]/div[2]/div/div/div/div[2]/table/tbody/tr/td[9]/a")).click();
-    });
-
-    Then('report should be open in the new tab', function () {
-        var that = this.driver;
-        this.driver.getAllWindowHandles().then(function (handles) {
-            that.switchTo().window(handles[1]).then(function () {
-                that.getTitle().then( function(the_title){
-                    assert.equal("Quarterly Summary Report Q2-2016", the_title);
-                });
-            });
-        });
     });
 
     //Delete Scenario

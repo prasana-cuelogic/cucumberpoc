@@ -183,4 +183,16 @@ defineSupportCode(function({Given, When, Then, setDefaultTimeout}) {
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
         this.driver.wait(condition, 5000);
     });*/
+
+
+    /*************************************************************************************/
+
+    //Client report
+    Then('I should redirect on the {arg1:stringInDoubleQuotes} link and {arg2:stringInDoubleQuotes} page', function (arg1, arg2) {
+        // Write code here that turns the phrase above into concrete actions
+        this.driver.get(arg1);
+        var xpath = "//*[contains(text(),'"+arg2+"')]";
+        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        return this.driver.wait(condition, 5000);
+    });
 });

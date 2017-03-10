@@ -11,8 +11,8 @@
 #    When I search for "Capital Institute" companies report of quarter "4" for year "2016"
 #    And Click on the edit link
 #    Then I sholud redirect on the "Edit Summary Report" page.
-#    When I update "Summary Report Status" to "0" and save data.
-#    Then Record gets updated and I redirected on the listing page.
+#    When I update "Summary Report Status" to "Inactive" and save data.
+#    Then Record gets updated and I redirected on the "Summary Report" listing page.
 
 #  Scenario: Check Preview client summary report.
 #    Given I am on the home page
@@ -20,7 +20,7 @@
 #    Then I am going to "Summary Report" page.
 #    When I search for "Darden Restaurants" companies report of quarter "2" for year "2016"
 #    And Click on the preview link
-#    Then report should be open in the new tab
+#    Then "Darden Restaurants 2016 - Q2" report should be open in the new tab
 #    And report title should be "Darden Restaurants 2016 - Q2"
 
 #  Scenario: View client summary report.
