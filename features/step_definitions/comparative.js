@@ -18,7 +18,7 @@ defineSupportCode(function({Given, When, Then, setDefaultTimeout}) {
         return this.driver.get('http://test1.3blmedia.com/autoLogin');
     });
 
-    Then('I should redirect on the {arg1:stringInDoubleQuotes} page', function (arg1) {
+    Then('I should redirect on the {stringInDoubleQuotes} page', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
         this.driver.get('http://test1.3blmedia.com/admin/comparative-report');
         var xpath = "//*[contains(text(),'"+arg1+"')]";
@@ -26,7 +26,7 @@ defineSupportCode(function({Given, When, Then, setDefaultTimeout}) {
         return this.driver.wait(condition, 5000);
     });
 
-    Given('I am on the {arg1:stringInDoubleQuotes} page.', function (arg1) {
+    Given('I am on the {stringInDoubleQuotes} page.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
         this.driver.get('http://test1.3blmedia.com/admin/comparative-report');
         var xpath = "//*[contains(text(),'"+arg1+"')]";
@@ -34,28 +34,28 @@ defineSupportCode(function({Given, When, Then, setDefaultTimeout}) {
         return this.driver.wait(condition, 5000);
     });
 
-    When('I search {arg1:stringInDoubleQuotes} exisitng record.', function (arg1) {
+    When('I search {stringInDoubleQuotes} exisitng record.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
         return this.driver.findElement(seleniumWebdriver.By.className("form-text")).then(function(element) {
             return element.sendKeys(arg1);
         });
     });
 
-    When('click on the {arg1:stringInDoubleQuotes} button.', function (arg1) {
+    When('click on the {stringInDoubleQuotes} button.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
         return this.driver.findElement(seleniumWebdriver.By.className("form-submit")).then(function(element) {
             return element.click();
         });
     });
 
-    Then('I will get {arg1:stringInDoubleQuotes} matching records.', function (arg1) {
+    Then('I will get {stringInDoubleQuotes} matching records.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
         var xpath = "//*[contains(text(),'"+arg1+"')]";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
         return this.driver.wait(condition, 5000);
     });
 
-    When('I pick first record and click on the {arg1:stringInDoubleQuotes} link.', function (arg1) {
+    When('I pick first record and click on the {stringInDoubleQuotes} link.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
         var xpath = "//*[contains(text(),'"+arg1+"')]";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
@@ -73,14 +73,14 @@ defineSupportCode(function({Given, When, Then, setDefaultTimeout}) {
 
     });
 
-    Then('title of page will be {arg1:stringInDoubleQuotes}.', function (arg1) {
+    Then('title of page will be {stringInDoubleQuotes}.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
         var xpath = "//*[contains(text(),'"+arg1+"')]";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
         return this.driver.wait(condition, 5000);
     });
 
-    When('I click on the {arg1:stringInDoubleQuotes} button', function (arg1) {
+    When('I click on the {stringInDoubleQuotes} button', function (arg1) {
         var xpath = "html/body/div[3]/div[2]/div[2]/div/div/form/div/input[4]";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
         this.driver.wait(condition, 5000);
@@ -98,7 +98,7 @@ defineSupportCode(function({Given, When, Then, setDefaultTimeout}) {
 
 // Edit report ******************************
 
-    When('I search for {arg1:stringInDoubleQuotes} group', function (arg1) {
+    When('I search for {stringInDoubleQuotes} group', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
         this.driver.findElement(seleniumWebdriver.By.id("edit-title")).then(function (element) {
             return element.sendKeys(arg1);
@@ -111,20 +111,20 @@ defineSupportCode(function({Given, When, Then, setDefaultTimeout}) {
 
 
 //Create new report ****************************
-    Then('click on the {arg1:stringInDoubleQuotes} link', function (arg1) {
+    Then('click on the {stringInDoubleQuotes} link', function (arg1) {
         return this.driver.findElement(seleniumWebdriver.By.linkText(arg1)).then(function(element) {
             return element.click();
         });
     });
 
-    Then('I will go to {arg1:stringInDoubleQuotes} page', function (arg1) {
+    Then('I will go to {stringInDoubleQuotes} page', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
         var xpath = "//*[contains(text(),'"+arg1+"')]";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
         return this.driver.wait(condition, 5000);
     });
 
-    When('I add {arg1:stringInDoubleQuotes} title  and {arg2:stringInDoubleQuotes} subtitle of the report', function (arg1, arg2) {
+    When('I add {stringInDoubleQuotes} title  and {stringInDoubleQuotes} subtitle of the report', function (arg1, arg2) {
         // Write code here that turns the phrase above into concrete actions
         this.driver.findElement(seleniumWebdriver.By.id("edit-title")).then(function(element) {
             return element.sendKeys(arg1);
@@ -134,7 +134,7 @@ defineSupportCode(function({Given, When, Then, setDefaultTimeout}) {
         });
     });
 
-    Then('I click on the {arg1:stringInDoubleQuotes} tab', function (arg1) {
+    Then('I click on the {stringInDoubleQuotes} tab', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
         var xpath = "//*[contains(text(),'"+arg1+"')]";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
@@ -188,7 +188,7 @@ defineSupportCode(function({Given, When, Then, setDefaultTimeout}) {
     /*************************************************************************************/
 
     //Client report
-    Then('I should redirect on the {arg1:stringInDoubleQuotes} link and {arg2:stringInDoubleQuotes} page', function (arg1, arg2) {
+    Then('I should redirect on the {stringInDoubleQuotes} link and {stringInDoubleQuotes} page', function (arg1, arg2) {
         // Write code here that turns the phrase above into concrete actions
         this.driver.get(arg1);
         var xpath = "//*[contains(text(),'"+arg2+"')]";

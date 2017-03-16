@@ -13,14 +13,14 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         return this.driver.get('http://test1.3blmedia.com/autoClientLogin');
     });
 
-    Then('I will be redirect on Analytic page on the {arg1:stringInDoubleQuotes} tab.', function (arg1) {
+    Then('I will be redirect on Analytic page on the {stringInDoubleQuotes} tab.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
         var xpath = "//*[contains(text(),'" + arg1 + "')]";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
         return this.driver.wait(condition, 10000);
     });
 
-    When('I click on the {arg1:stringInDoubleQuotes} Link.', function (arg1) {
+    When('I click on the {stringInDoubleQuotes} Link.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
         var xpath = "html/body/div[5]/div/div[3]/div/div[1]/div/div/div/div/div/div/ul/li[6]/span/a";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
@@ -30,14 +30,14 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         });
     });
 
-    Then('I will redirect on Report page and page title will be {arg1:stringInDoubleQuotes}', function (arg1) {
+    Then('I will redirect on Report page and page title will be {stringInDoubleQuotes}', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
         var xpath = "//*[contains(text(),'" + arg1 + "')]";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
         return this.driver.wait(condition, 10000);
     });
 
-    When('I click on the Email Icon of {arg1:stringInDoubleQuotes}.', function (arg1) {
+    When('I click on the Email Icon of {stringInDoubleQuotes}.', function (arg1) {
         // Write code here that turns the phrase above into concrete actions
         var xpath = "//*[contains(text(),'" + arg1 + "')]";
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
@@ -54,7 +54,7 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         return this.driver.wait(condition, 5000);
     });
 
-    When('I add email {arg1:stringInDoubleQuotes} and message {arg2:stringInDoubleQuotes}.', function (arg1, arg2) {
+    When('I add email {stringInDoubleQuotes} and message {stringInDoubleQuotes}.', function (arg1, arg2) {
         // Write code here that turns the phrase above into concrete actions
         this.driver.findElement(seleniumWebdriver.By.id("email")).then(function (element) {
             return element.sendKeys(arg1);
