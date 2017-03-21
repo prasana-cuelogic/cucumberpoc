@@ -78,4 +78,58 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
         return this.driver.wait(condition, 10000);
     });
+
+    Then('{arg1:stringInDoubleQuotes} tab will be opened', function (arg1) {
+        var xpath = "//*[contains(text(),'" + arg1 + "')]";
+        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        return this.driver.wait(condition, 10000);
+    })
+
+    Then('{arg1:stringInDoubleQuotes} and {arg2:stringInDoubleQuotes} Sections will be viewable', function (arg1, arg2) {
+        var xpath = "//*[contains(text(),'" + arg1 + "')]";
+        var xpath1 = "//*[contains(text(),'" + arg2 + "')]";
+        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        this.driver.wait(condition, 10000);
+        var condition1 = seleniumWebdriver.until.elementLocated({xpath: xpath1});
+        return this.driver.wait(condition1, 10000);
+    })
+
+    Then('Text {arg1:stringInDoubleQuotes} will be viewable', function (arg1) {
+        var xpath = "//*[contains(text(),'" + arg1 + "')]";
+        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        return this.driver.wait(condition, 10000);
+    })
+
+    Then('Click on {arg1:stringInDoubleQuotes} from Analytics by Media Type Section', function (arg1) {
+        return this.driver.findElement(seleniumWebdriver.By.xpath('//*[@id="analyticsWrapper"]/div/div/ul/li[7]/div[1]/div/div[2]/ul/li[1]/ul/li[1]/span/a')).then(function (element) {
+            return element.click();
+        });
+    })
+
+    When('I will redirect on new page with section {arg1:stringInDoubleQuotes}', function (arg1) {
+        var xpath = "//*[contains(text(),'" + arg1 + "')]";
+        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        return this.driver.wait(condition, 10000);
+    })
+
+    Then('Click on FMR title', function (arg1) {
+        return this.driver.findElement(seleniumWebdriver.By.xpath('//*[@id="mediaresult"]/ul/li[1]/h2/a')).then(function (element) {
+            return element.click();
+        });
+    })
+
+    Then('New page gets open with section {arg1:stringInDoubleQuotes} and {arg2:stringInDoubleQuotes}', function (arg1, arg2) {
+        var xpath = "//*[contains(text(),'" + arg1 + "')]";
+        var xpath1 = "//*[contains(text(),'" + arg2 + "')]";
+        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
+        this.driver.wait(condition, 10000);
+        var condition1 = seleniumWebdriver.until.elementLocated({xpath: xpath1});
+        return this.driver.wait(condition1, 10000);
+    })
+
+    Then('Click on {arg1:stringInDoubleQuotes} tab', function (arg1) {
+        return this.driver.findElement(seleniumWebdriver.By.xpath('//*[@id="analyticsWrapper"]/div/ul/li[6]/span/a')).then(function (element) {
+            return element.click();
+        });
+    })
 });
