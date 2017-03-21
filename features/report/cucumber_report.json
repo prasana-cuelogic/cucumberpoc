@@ -1,0 +1,260 @@
+[
+  {
+    "description": "  As a user of website and having client account.\n  I able to login with client username and password\n  So I can check company analytic reports.",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Email Analytic Report to other members.",
+    "tags": [],
+    "uri": "/Applications/MAMP/htdocs/cucumber-poc/features/report_tab.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Go to analytic repots tab",
+        "tags": [],
+        "id": "email-analytic-report-to-other-members.;go-to-analytic-repots-tab",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I am on the home page",
+            "result": {
+              "status": "passed",
+              "duration": 16571
+            },
+            "line": 7,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/comparative.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I login as a client with username and password",
+            "result": {
+              "status": "passed",
+              "duration": 8065
+            },
+            "line": 8,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/report_tab.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I will be redirect on Analytic page on the \"Summary\" tab.",
+            "result": {
+              "status": "passed",
+              "duration": 104
+            },
+            "line": 9,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/report_tab.js:16"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on the \"Reports\" Link.",
+            "result": {
+              "status": "passed",
+              "duration": 7235
+            },
+            "line": 10,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/report_tab.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I will redirect on Report page and page title will be \"Summary Reports\"",
+            "result": {
+              "status": "passed",
+              "duration": 43
+            },
+            "line": 11,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/report_tab.js:33"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on the Email Icon of \"Six Month Analytics Summary Report\".",
+            "result": {
+              "status": "passed",
+              "duration": 187
+            },
+            "line": 12,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/report_tab.js:40"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "email window will be open.",
+            "result": {
+              "status": "passed",
+              "duration": 50
+            },
+            "line": 13,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/report_tab.js:50"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I add email \"prasana.alawekar@cuelogic.co.in\" and message \"This is analytic report\".",
+            "result": {
+              "status": "passed",
+              "duration": 3
+            },
+            "line": 14,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/report_tab.js:57"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "click on the submit button",
+            "result": {
+              "status": "passed",
+              "duration": 14331
+            },
+            "line": 15,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/report_tab.js:68"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "email send to given email.",
+            "result": {
+              "status": "passed",
+              "duration": 37
+            },
+            "line": 16,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/report_tab.js:75"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "result": {
+              "status": "passed",
+              "duration": 56
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/hooks.js:4"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "email-analytic-report-to-other-members."
+  },
+  {
+    "description": "  As a Client of site.\n  I able to check tracking report for the my published FMRs.\n  Also I able to download that report in PDF or excel format.",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Check tracking report for the published FMRs.",
+    "tags": [],
+    "uri": "/Applications/MAMP/htdocs/cucumber-poc/features/tracking.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Check FMR tracking report for published FMR.",
+        "tags": [],
+        "id": "check-tracking-report-for-the-published-fmrs.;check-fmr-tracking-report-for-published-fmr.",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I am on the home page",
+            "result": {
+              "status": "passed",
+              "duration": 13461
+            },
+            "line": 7,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/comparative.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I login as a client with username and password",
+            "result": {
+              "status": "passed",
+              "duration": 8187
+            },
+            "line": 8,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/report_tab.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I go to \"http://test1.3blmedia.com/Dashboard/Analytics/Tracking\" link and page title is \"TRACKING SUMMARY\"",
+            "result": {
+              "status": "failed",
+              "duration": 40007,
+              "error_message": "Error: function timed out after 40000 milliseconds\n    at Timeout._onTimeout (/Applications/MAMP/htdocs/cucumber-poc/node_modules/cucumber/lib/user_code_runner.js:91:22)\n    at ontimeout (timers.js:365:14)\n    at tryOnTimeout (timers.js:237:5)\n    at Timer.listOnTimeout (timers.js:207:5)"
+            },
+            "line": 9,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/tracking.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I select FMR from dropdown",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/tracking.js:21"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Tracking results will be listed down for the selected FMR",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/tracking.js:31"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "result": {
+              "status": "passed",
+              "duration": 8630
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Applications/MAMP/htdocs/cucumber-poc/features/step_definitions/hooks.js:4"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "check-tracking-report-for-the-published-fmrs."
+  }
+]

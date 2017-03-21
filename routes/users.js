@@ -8,6 +8,25 @@ router.get('/', function(req, res, next) {
 
 }).get('/user',function (req, res, next) {
     res.render('user_list', { title: 'User List'});
+}).get('/report', function (req, res, next){
+    var reporter = require('cucumber-html-reporter');
+    var options = {
+        theme: 'bootstrap',
+        jsonFile: 'features/report/cucumber_report.json',
+        output: 'features/report/cucumber_report.html',
+        reportSuiteAsScenarios: true,
+        launchReport: false,
+        metadata: {
+            "App Version":"0.3.2",
+            "Test Environment": "dev",
+            "Browser": "Chrome  54.0.2840.98",
+            "Platform": "Windows 10",
+            "Parallel": "Scenarios",
+            "Executed": "Remote"
+        }
+    };
+    reporter.generate(options);
+
 });
 
 router.post('/', function(req, res, next) {
