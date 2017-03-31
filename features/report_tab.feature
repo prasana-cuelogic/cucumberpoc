@@ -2,18 +2,18 @@ Feature: Email Analytic Report to other members.
   As a user of website and having client account.
   I able to login with client username and password
   So I can check company analytic reports.
-
-  Scenario: Go to analytic repots tab
-    Given I am on the home page
-    When I login as a client with username and password
-    Then I will be redirect on Analytic page on the "Summary" tab.
-    When  I click on the "Reports" Link.
-    Then I will redirect on Report page and page title will be "Summary Reports"
-    When I click on the Email Icon of "Six Month Analytics Summary Report".
-    Then email window will be open.
-    When I add email "prasana.alawekar@cuelogic.co.in" and message "This is analytic report".
-    And click on the submit button
-    Then email send to given email.
+#
+#  Scenario: Go to analytic repots tab
+#    Given I am on the home page
+#    When I login as a client with username and password
+#    Then I will be redirect on Analytic page on the "Summary" tab.
+#    When  I click on the "Reports" Link.
+#    Then I will redirect on Report page and page title will be "Summary Reports"
+#    When I click on the Email Icon of "Six Month Analytics Summary Report".
+#    Then email window will be open.
+#    When I add email "prasana.alawekar@cuelogic.co.in" and message "This is analytic report".
+#    And click on the submit button
+#    Then email send to given email.
 
   #Analytics and Report Tab functionality
 #    Scenario: Testing analytics view page
@@ -41,14 +41,41 @@ Feature: Email Analytic Report to other members.
 #      Then Click on FMR title
 #      And New page gets open with section "Analytics for FMR" and "Geographical Stats"
 
-      Scenario: Test download PDF report
+#      Scenario: Test download PDF report
+#        Given I am on the home page
+#        When I login as a client with username and password
+#        Then "Summary" tab will be opened
+#        And Click on "Reports" tab
+#        Then New page gets open with section "Analytics Summary by Media Type" and "Analytics Summary by Campaign"
+#        When I select media type from dropdown
+
+       Scenario: Email PDF
         Given I am on the home page
         When I login as a client with username and password
         Then "Summary" tab will be opened
         And Click on "Reports" tab
         Then New page gets open with section "Analytics Summary by Media Type" and "Analytics Summary by Campaign"
+        When I click on the Email Icon of "Six Month Analytics Summary Report".
+        Then email window will be open.
+        When I add email "santosh.jagtap@cuelogic.co.in" and message "This is analytic report".
+        And click on the submit button
+        Then email send to given email.
 
+#      Scenario: Test download EXCEL report
+#        Given I am on the home page
+#        When I login as a client with username and password
+#        Then "Summary" tab will be opened
+#        And Click on "Reports" tab
+#        Then New page gets open with section "Analytics Summary by Media Type" and "Analytics Summary by Campaign"
+#        When I select campaign from dropdown
 
+#Scenario: Open report in the HTML format for download
+#        Given I am on the home page
+#        When I login as a client with username and password
+#        Then "Summary" tab will be opened
+#        And Click on "Reports" tab
+#        Then New page gets open with section "Analytics Summary by Media Type" and "Analytics Summary by Campaign"
+#        When I select summary report from dropdown
 
 
 
