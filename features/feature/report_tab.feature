@@ -1,7 +1,7 @@
-Feature: Email Analytic Report to other members.
-  As a user of website and having client account.
-  I able to login with client username and password
-  So I can check company analytic reports.
+#Feature: Email Analytic Report to other members.
+#  As a user of website and having client account.
+#  I able to login with client username and password
+#  So I can check company analytic reports.
 #
 #  Scenario: Go to analytic repots tab
 #    Given I am on the home page
@@ -49,17 +49,17 @@ Feature: Email Analytic Report to other members.
 #        Then New page gets open with section "Analytics Summary by Media Type" and "Analytics Summary by Campaign"
 #        When I select media type from dropdown
 
-       Scenario: Email PDF
-        Given I am on the home page
-        When I login as a client with username and password
-        Then "Summary" tab will be opened
-        And Click on "Reports" tab
-        Then New page gets open with section "Analytics Summary by Media Type" and "Analytics Summary by Campaign"
-        When I click on the Email Icon of "Six Month Analytics Summary Report".
-        Then email window will be open.
-        When I add email "santosh.jagtap@cuelogic.co.in" and message "This is analytic report".
-        And click on the submit button
-        Then email send to given email.
+#       Scenario: Email PDF
+#        Given I am on the home page
+#        When I login as a client with username and password
+#        Then "Summary" tab will be opened
+#        And Click on "Reports" tab
+#        Then New page gets open with section "Analytics Summary by Media Type" and "Analytics Summary by Campaign"
+#        When I click on the Email Icon of "Six Month Analytics Summary Report".
+#        Then email window will be open.
+#        When I add email "santosh.jagtap@cuelogic.co.in" and message "This is analytic report".
+#        And click on the submit button
+#        Then email send to given email.
 
 #      Scenario: Test download EXCEL report
 #        Given I am on the home page
