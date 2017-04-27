@@ -38,25 +38,23 @@ var MicrolistPage = {
     },
 
     DeleteList: function (drivers) {
-        //driver.findElement(By.Xpath("//img[@ src='images/shim.gif']")).click();
-
-        drivers.findElement(By.css("li.microlist:nth-child(2) > div:nth-child(1) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(2) > a:nth-child(1)")).then(function (element) {
+        drivers.findElement(By.css('div.rightsidemargin > ul.links > li.node-readmore:nth-child(2)')).then(function (element) {
             element.click();
-        });
-        var condition = wd.until.elementLocated(By.partialLinkText('Team'));
-        drivers.wait(condition, 4000);
-
-        return drivers.switchTo().alert().then (function (alert) {
-            alert.accept();
-        });
-
-        /*return drivers.findElement(By.css("li.microlist:nth-child(2) > div:nth-child(1) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(2) > a:nth-child(1)")).then(function (element) {
-            element.click();
-        }).then(function (element) {
+        }).then(function () {
             drivers.switchTo().alert().accept();
-        });*/
+        }).then(function () {
+            var link = drivers.findElement(By.css('div.rightsidemargin > ul.links > li.node-readmore:nth-child(2) > a')).getAttribute('href');
+            return drivers.get(link);
+        });
     },
+    afterDelete: function (drivers) {
+        var condition = wd.until.elementLocated(By.id('SuccessMsg'));
+        drivers.wait(condition, 5000);
 
+        return drivers.findElement(By.className('SuccessMsg')).getText().then(function (elem_text) {
+            return assert.equal('Your email list has been removed successfully.', elem_text);
+        });
+    },
     ClickAdd: function (drivers) {
         drivers.findElement(By.css(".styleEmailList > a:nth-child(1)")).click();
         var condition = wd.until.elementLocated(By.partialLinkText('NEW LIST'));

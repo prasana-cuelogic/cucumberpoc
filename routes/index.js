@@ -28,7 +28,7 @@ router.get('/', function(req, res, next) {
         reporter.generate(options);
         fs.readFile(__dirname + '/views/user.html', 'utf8', function(err, html){
 
-        }
+        });
 
         var service = "Gmail";
         var auth = {email:'cucumberpoc@gmail.com', password: ''};

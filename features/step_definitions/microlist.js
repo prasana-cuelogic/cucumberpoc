@@ -25,8 +25,16 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         return MicrolistPage.UpdateList(this.driver);
     });
 
-    When('Visitor click on delete link', function () {
-        MicrolistPage.DeleteList(this.driver);
+    When('Visitor find {stringInDoubleQuotes} microlist to delete', function (arg1) {
+        return MicrolistPage.SearchList(this.driver, arg1);
+    });
+
+    When('click on the detele button and accept', function () {
+        return MicrolistPage.DeleteList(this.driver);
+    });
+
+    Then('microlist get deleted & success message get displayed', function () {
+        return MicrolistPage.afterDelete(this.driver);
     });
 
     When('Visitor click on Add Email List', function () {
