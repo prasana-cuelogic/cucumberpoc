@@ -1,30 +1,35 @@
-
-var assert = require('assert');
-var seleniumWebdriver = require('selenium-webdriver'), By = seleniumWebdriver.By;
-var MicrolistPage = require('../page_object/microlist.page');
-var LoginPage = require('../page_object/login.page');
-var {defineSupportCode} = require('cucumber');
+var seleniumWebdriver = require('selenium-webdriver'), By = seleniumWebdriver.By,
+    MicrolistPage = require('../page_object/microlist.page'),
+    LoginPage = require('../page_object/login.page'),
+    {defineSupportCode} = require('cucumber');
 
 defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
-
-    Given('I am logged in as client', function (callback) {
-        LoginPage.clientLogin(this.driver);
-        callback();
+    setDefaultTimeout(50 * 1000);
+    Given('I am logged in as client', function () {
+        return LoginPage.clientLogin(this.driver);
     });
 
-    Given(/^I am on client microlist page$/, function(callback) {
-        this.driver.get(MicrolistPage.url);
-        callback();
+    Given(/^I am on client microlist page$/, function() {
+        return MicrolistPage.open(this.driver);
     });
 
-    When('Visitor find {stringInDoubleQuotes} mircolist and click on edit icon', function (arg1) {
-        MicrolistPage.SearchList(this.driver, arg1);
+    When('Visitor find {stringInDoubleQuotes} mircolist', function (arg1) {
+        return MicrolistPage.SearchList(this.driver, arg1);
     });
 
-    Then('Visitor will update list name and description', function (callback) {
-        var that = this.driver;
-        this.driver.wait(function() {
-            that.findElement(By.linkText('Edit Contact List')).click();
-        }, 5000);
+    When('click on edit icon', function () {
+        return MicrolistPage.EditList(this.driver);
+    });
+
+    Then('Visitor will update list name and description', function () {
+        return MicrolistPage.UpdateList(this.driver);
+    });
+
+    When('Visitor click on delete link', function () {
+        MicrolistPage.DeleteList(this.driver);
+    });
+
+    When('Visitor click on Add Email List', function () {
+        MicrolistPage.ClickAdd(this.driver);
     })
 });
