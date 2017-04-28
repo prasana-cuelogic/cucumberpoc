@@ -39,5 +39,17 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
 
     When('Visitor click on Add Email List', function () {
         MicrolistPage.ClickAdd(this.driver);
+    });
+
+    Then('Visitor click on Edit Contact List and then Add Contact', function () {
+        MicrolistPage.ClickAddContact(this.driver);
+    });
+    
+    Then('Visitor add new contact in list', function () {
+        MicrolistPage.AddContact(this.driver);
+    });
+
+    Then('Visitor click on Edit Contact List and remove contact from list', function () {
+        MicrolistPage.RemoveContact(this.driver);
     })
 });

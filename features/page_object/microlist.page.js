@@ -1,6 +1,5 @@
 var assert = require('assert'),
-    wd = require('selenium-webdriver'), By = wd.By,
-    driver = require('selenium-webdriver/lib/webdriver');
+    wd = require('selenium-webdriver'), By = wd.By;
 
 var MicrolistPage = {
     url: "http://test1.3blmedia.com/Dashboard/ClientMicroList",
@@ -68,6 +67,44 @@ var MicrolistPage = {
         var condition = wd.until.elementLocated(By.id('SuccessMsg'));
         return drivers.wait(condition, 5000);
 
+    },
+
+    ClickAddContact: function (drivers) {
+        drivers.findElement(By.css(".editContactList>a>b")).click();
+        var condition = wd.until.elementLocated(By.partialLinkText('Entries'));
+        drivers.wait(condition, 2000);
+
+        drivers.findElement(By.css(".addcontactstyle>a>b")).click();
+        var condition = wd.until.elementLocated(By.partialLinkText('Entries'));
+        return drivers.wait(condition, 2000);
+    },
+
+    AddContact: function (drivers) {
+        drivers.findElement(By.id("fname")).sendKeys("John");
+        drivers.findElement(By.id("lname")).sendKeys("Mathews");
+        var num = Math.floor((Math.random() * 100) + 1);
+        drivers.findElement(By.id("email")).sendKeys("johnmathews"+num+"@gmail.com");
+        drivers.findElement(By.id("submitEmail")).click();
+
+        var condition = wd.until.elementLocated(By.id('SuccessMsg'));
+        return drivers.wait(condition, 5000);
+    },
+
+    RemoveContact: function (drivers) {
+        drivers.findElement(By.css(".editContactList>a>b")).click();
+        var condition = wd.until.elementLocated(By.partialLinkText('Entries'));
+        drivers.wait(condition, 2000);
+
+        drivers.findElement(By.css('#frmClientEmail > div.borderOnList > ul > li:nth-child(2) > div > span.width20 > input')).click();
+
+        drivers.findElement(By.id("delete")).then(function (element) {
+            element.click();
+        }).then(function () {
+            drivers.switchTo().alert().accept();
+        });
+
+        var condition = wd.until.elementLocated(By.id('SuccessMsg'));
+        return drivers.wait(condition, 4000);
     }
 };
 
