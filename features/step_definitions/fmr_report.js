@@ -19,9 +19,29 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
 
     When('filter with type as {stringInDoubleQuotes}', function (arg1) {
         return FmrPage.filterFmrReport(this.driver, arg1);
-    })
+    });
 
     Then('Visitor Sort records with Published column', function () {
         return FmrPage.sortFmrReport(this.driver);
-    })
+    });
+
+    When('click on Report link and report with title {stringInDoubleQuotes} open in new tab', function (arg1) {
+        return FmrPage.openReport(this.driver, arg1)
+    });
+
+    Then('Impressions and Clicks visible on page', function () {
+        return FmrPage.checkReport(this.driver)
+    });
+    
+    Given('I am on Week at a glance Analytics page', function () {
+        return FmrPage.openweekatglance(this.driver)
+    });
+
+    When('I search fmr and click on it', function () {
+        return FmrPage.searchFmr(this.driver)
+    });
+
+    Then('FMR detail page get open', function () {
+        return FmrPage.fmrDetails(this.driver)
+    });
 });
