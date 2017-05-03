@@ -1,46 +1,34 @@
-require('chromedriver');
-var assert = require('assert');
-var seleniumWebdriver = require('selenium-webdriver');
-var {defineSupportCode} = require('cucumber');
-var currentUrl;
-var new_window_url;
+var seleniumWebdriver = require('selenium-webdriver'), By = seleniumWebdriver.By,
+    TrackingPage = require('../page_object/tracking.page'),
+    LoginPage = require('../page_object/login.page'),
+    {defineSupportCode} = require('cucumber');
 
 defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
     setDefaultTimeout(40 * 1000);
-    //Edit Scenario
 
-    Then('I go to {stringInDoubleQuotes} lin' +
-        'k and page title is {stringInDoubleQuotes}', function (arg1, arg2) {
-        // Write code here that turns the phrase above into concrete actions
-        this.driver.get(arg1);
-        var xpath = "//*[contains(text(),'"+arg2+"')]";
-        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
-        return this.driver.wait(condition, 5000);
+    Given('I am on the trackin page', function () {
+        return TrackingPage.open(this.driver);
     });
 
-    When('I select FMR from dropdown', function () {
-        var that = this.driver;
-        // Write code here that turns the phrase above into concrete actions
-        this.driver.findElement(seleniumWebdriver.By.xpath("html/body/div[5]/div/div[3]/div/div[1]/div/div/div/div/div/div/div[1]/form/ul/li[3]/div/div/a/span")).then(function(element) {
-            element.click();
-            that.findElement(seleniumWebdriver.By.xpath('html/body/div[5]/div/div[3]/div/div[1]/div/div/div/div/div/div/div[1]/form/ul/li[3]/div/div/div/ul/li[4]')).then(function (elements) {                return elements.click();
-            });
-        });
+    /* Select Tracking FMR */
+    When('Select FMR from drop-down', function () {
+        return TrackingPage.selectFMR(this.driver);
     });
 
-    Then('Tracking results will be listed down for the selected FMR', function () {
-        // Write code here that turns the phrase above into concrete actions
-        var xpath = "html/body/div[5]/div/div[3]/div/div[1]/div/div/div/div/div/div/div[1]/form/ul/li[3]/div/div/a/span[contains(text(), 'Las Vegas Chooses Renewable Energy - The Minute')]";
-        var condition = seleniumWebdriver.until.elementLocated({xpath: xpath});
-        return this.driver.wait(condition, 5000);
+    Then('Tracking results will be listed down for the selected FMR', function (arg1) {
+        return TrackingPage.trackingList(this.driver);
     });
 
-    //Download PDF
-    When('I click on the PDF icon', function () {
-        // Write code here that turns the phrase above into concrete actions
-        var xpath = 'html/body/div[5]/div/div[3]/div/div[1]/div/div/div/div/div/div/div[1]/form/ul/li[4]/a[2]/img';
-        this.driver.findElement(seleniumWebdriver.By.xpath(xpath)).click();
+    /* Download Tracking PDF */
+    When('I click on the PDF icon', function() {
+        return TrackingPage.selectPdf(this.driver);
     });
 
+    Then('Report will be download', function () {
+        return TrackingPage.downlodReport(this.driver);
+    });
 
+    When('I click on the Excel icon', function() {
+        return TrackingPage.selectExcel(this.driver);
+    });
 });

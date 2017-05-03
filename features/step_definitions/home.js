@@ -32,9 +32,9 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
     });
 
     //Download PDF
-    When('I click on the PDF icon', function () {
+    /*When('I click on the PDF icon', function () {
         // Write code here that turns the phrase above into concrete actions
         var xpath = 'html/body/div[5]/div/div[3]/div/div[1]/div/div/div/div/div/div/div[1]/form/ul/li[4]/a[2]/img';
         this.driver.findElement(seleniumWebdriver.By.xpath(xpath)).click();
-    });
+    });*/
 });
