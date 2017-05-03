@@ -33,7 +33,18 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
     });
 
     /* Downlaod Excel */
-    When('Download FMR Reports excel', function () {
+    When('Click on the FMR Reports excel', function () {
         return ReportPage.downlodExcel(this.driver);
+    });
+    Then('Report get downloaded', function () {
+        return true;
+    });
+
+    /* Summary report */
+    When('Select summary report', function () {
+        return ReportPage.selectSummaryReport(this.driver);
+    });
+    Then('Click on the HTML icon and report get opened in new tab', function () {
+        return ReportPage.openSummaryReport(this.driver);
     });
 });
