@@ -11,46 +11,36 @@ var FmrPage = {
         return drivers.wait(condition, 5000);
     },
 
-    serchFmrReport: function (drivers, selText) {
-        drivers.findElement(By.id("edit-title")).sendKeys(selText);
-        drivers.findElement(By.id("edit-submit-admin-content-node")).click();
-
-        var condition = wd.until.elementLocated(By.partialLinkText('Add content'));
-        return drivers.wait(condition, 2000);
-    },
-
-    filterFmrReport: function (drivers, filter1, filter2) {
+    serchFmrReport: function (drivers) {
+        drivers.findElement(By.id("edit-title")).sendKeys('content');
 
         drivers.findElement(By.css('#edit_type_chosen > a > span')).then(function(element) {
             element.click();
-            drivers.findElement(By.css('#edit_type_chosen > div > ul > li:nth-child(4)')).then(function (elements) {                                elements.click();
+            drivers.findElement(By.css('#edit_type_chosen > div > ul > li:nth-child(14)')).then(function (elements) {                                elements.click();
             });
         });
 
         drivers.findElement(By.id("edit-submit-admin-content-node")).click();
 
-
-
         var condition = wd.until.elementLocated(By.partialLinkText('Add content'));
-        return drivers.wait(condition, 2000);
-    },
+        drivers.wait(condition, 2000);
 
-    sortFmrReport: function (drivers) {
-        drivers.findElement(By.css('#views-form-admin-content-node-system-1 > div > table.views-table.sticky-enabled.cols-16.tableheader-processed.sticky-table > thead > tr > th.views-field.views-field-status > a')).then(function(element) {
+        drivers.findElement(By.css('.views-table > thead:nth-child(1) > tr:nth-child(1) > th:nth-child(3) > a:nth-child(1)')).then(function(element) {
             element.click();
         });
+
         var condition = wd.until.elementLocated(By.partialLinkText('Add content'));
-        return drivers.wait(condition, 5000);
+        return drivers.wait(condition, 3000);
     },
 
-    openReport: function (drivers, arg1) {
-        drivers.findElement(By.css('tr.odd:nth-child(2) > td:nth-child(12) > a:nth-child(1)')).then(function(element) {
+    openReport: function (drivers) {
+        drivers.findElement(By.css('tr.odd:nth-child(1) > td:nth-child(12) > a:nth-child(1)')).then(function(element) {
             element.click();
         });
         drivers.getAllWindowHandles().then(function (handles) {
             drivers.switchTo().window(handles[1]).then(function () {
                 drivers.getTitle().then( function(the_title){
-                    assert.equal(arg1, the_title);
+                    assert.equal("Fmr report | 3BL Media", the_title);
                 });
             });
         });

@@ -13,23 +13,15 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         return FmrPage.openfmrreport(this.driver);
     });
 
-    When('Visitor search with title containing {stringInDoubleQuotes}', function (arg1) {
-        return FmrPage.serchFmrReport(this.driver, arg1);
+    When('I search filter and sort fmr list', function () {
+        return FmrPage.serchFmrReport(this.driver);
     });
 
-    When('filter with type as {stringInDoubleQuotes}', function (arg1) {
-        return FmrPage.filterFmrReport(this.driver, arg1);
+    When('I click on Report link and report open in new tab', function () {
+        return FmrPage.openReport(this.driver)
     });
 
-    Then('Visitor Sort records with Published column', function () {
-        return FmrPage.sortFmrReport(this.driver);
-    });
-
-    When('click on Report link and report with title {stringInDoubleQuotes} open in new tab', function (arg1) {
-        return FmrPage.openReport(this.driver, arg1)
-    });
-
-    Then('Impressions and Clicks visible on page', function () {
+    Then('Primary Category and Impressions text visible', function () {
         return FmrPage.checkReport(this.driver)
     });
     
