@@ -9,6 +9,27 @@ var MicrolistPage = {
         var condition = wd.until.elementLocated(By.linkText('My Email Lists'));
         return drivers.wait(condition, 5000);
     },
+
+    ClickAdd: function (drivers) {
+        drivers.findElement(By.css(".styleEmailList > a:nth-child(1)")).click();
+        var condition = wd.until.elementLocated(By.partialLinkText('NEW LIST'));
+        return drivers.wait(condition, 2000);
+    },
+
+    AddMicroList: function (drivers) {
+        drivers.findElement(By.id("title")).sendKeys("Eve List1");
+        drivers.findElement(By.id("details")).sendKeys("Eve List1 desc");
+        drivers.findElement(By.id("emailfile")).sendKeys(
+            "/Users/PrasanaA/Downloads/FMRList1493201467.xls");
+        return drivers.findElement(By.id("submitList")).click();
+
+    },
+
+    ListAdded: function (drivers) {
+        var condition = wd.until.elementLocated(By.id('SuccessMsg'));
+        return drivers.wait(condition, 5000);
+    },
+
     SearchList: function (drivers, listName) {
         drivers.findElement(By.id("searchVal")).sendKeys(listName);
         drivers.findElement(By.id(" sub")).click();
@@ -18,16 +39,19 @@ var MicrolistPage = {
     },
 
     EditList: function (drivers) {
-        var condition = wd.until.elementLocated(By.partialLinkText('Team'));
-        drivers.wait(condition, 5000).then(function () {
-            return drivers.findElement(By.partialLinkText("Team")).click();
+        var condition = wd.until.elementLocated(By.css("li.node-readmore.first:nth-child(1) > a > img"));
+        return drivers.wait(condition, 5000).then(function () {
+            return drivers.findElement(By.css("li.node-readmore.first:nth-child(1) > a > img")).click();
         });
     },
 
-    UpdateList: function (drivers) {
-        drivers.findElement(By.id("title")).sendKeys(" test ");
-        drivers.findElement(By.id("details")).sendKeys(" test desc ");
-        drivers.findElement(By.id("submitList")).click();
+    UpdatedList: function (drivers) {
+        var condition1 = wd.until.elementLocated(By.id("title"));
+        drivers.wait(condition1, 5000).then(function () {
+            drivers.findElement(By.id("title")).sendKeys(" test ");
+            drivers.findElement(By.id("details")).sendKeys(" test desc ");
+            return drivers.findElement(By.id("submitList")).click();
+        });
 
         var condition = wd.until.elementLocated(By.id('SuccessMsg'));
         drivers.wait(condition, 5000);
@@ -47,7 +71,8 @@ var MicrolistPage = {
             return drivers.get(link);
         });
     },
-    afterDelete: function (drivers) {
+
+    AfterDelete: function (drivers) {
         var condition = wd.until.elementLocated(By.id('SuccessMsg'));
         drivers.wait(condition, 5000);
 
@@ -55,29 +80,21 @@ var MicrolistPage = {
             return assert.equal('Your email list has been removed successfully.', elem_text);
         });
     },
-    ClickAdd: function (drivers) {
-        drivers.findElement(By.css(".styleEmailList > a:nth-child(1)")).click();
-        var condition = wd.until.elementLocated(By.partialLinkText('NEW LIST'));
-        drivers.wait(condition, 2000);
-        drivers.findElement(By.id("title")).sendKeys("Eve List1");
-        drivers.findElement(By.id("details")).sendKeys("Eve List1 desc");
-        drivers.findElement(By.id("emailfile")).sendKeys(
-            "/Users/Santosh/Downloads/FMRList1493201467.xls");
-        drivers.findElement(By.id("submitList")).click();
 
-        var condition = wd.until.elementLocated(By.id('SuccessMsg'));
-        return drivers.wait(condition, 5000);
+    EditEmailList: function (drivers) {
+        this.EditList(drivers);
 
+        drivers.findElement(By.css(".editContactList > a > b")).click();
+        var condition = wd.until.elementLocated(By.partialLinkText('Entries'));
+        return drivers.wait(condition, 2000);
     },
 
     ClickAddContact: function (drivers) {
-        drivers.findElement(By.css(".editContactList>a>b")).click();
+        this.EditEmailList(drivers);
+
+        drivers.findElement(By.css(".addcontactstyle > a > b")).click();
         var condition = wd.until.elementLocated(By.partialLinkText('Entries'));
         drivers.wait(condition, 2000);
-
-        drivers.findElement(By.css(".addcontactstyle>a>b")).click();
-        var condition = wd.until.elementLocated(By.partialLinkText('Entries'));
-        return drivers.wait(condition, 2000);
     },
 
     AddContact: function (drivers) {
@@ -92,10 +109,6 @@ var MicrolistPage = {
     },
 
     RemoveContact: function (drivers) {
-        drivers.findElement(By.css(".editContactList>a>b")).click();
-        var condition = wd.until.elementLocated(By.partialLinkText('Entries'));
-        drivers.wait(condition, 2000);
-
         drivers.findElement(By.css('#frmClientEmail > div.borderOnList > ul > li:nth-child(2) > div > span.width20 > input')).click();
 
         drivers.findElement(By.id("delete")).then(function (element) {
