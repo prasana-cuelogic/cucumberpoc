@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af62e1cd-84c9-42cf-884c-0f8e7da97bee" name="Default" comment="Added 3 new features for the 3BL Media project.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/feature/fmr_report.feature" afterPath="$PROJECT_DIR$/features/feature/fmr_report.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/page_object/fmr_report.page.js" afterPath="$PROJECT_DIR$/features/page_object/fmr_report.page.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/fmr_report.js" afterPath="$PROJECT_DIR$/features/step_definitions/fmr_report.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,7 +21,58 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="analytics.feature" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/features/feature/analytics.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="analytics.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/step_definitions/analytics.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="61" lean-forward="false" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="analytics.page.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/page_object/analytics.page.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="915">
+              <caret line="61" column="5" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fmr_report.page.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/page_object/fmr_report.page.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-36">
+              <caret line="25" column="38" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="25" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="microlist.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/step_definitions/microlist.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-304">
+              <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,18 +83,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>url(</find>
-      <find>to(</find>
-      <find>switchTo(</find>
-      <find>IWebDriver</find>
-      <find>selenium-pageobject</find>
-      <find>page</find>
-      <find>downl</find>
-      <find>I select campaign from dropdown</find>
-      <find>microlist get deleted &amp; success message get d</find>
-      <find>Add new email list</find>
-      <find>Then Visitor will see form to upload email list</find>
-      <find>Visitor will see form to upload email list</find>
       <find>Visitor click on Add Email List</find>
       <find>adminurl</find>
       <find>Visitor click on Add 3BL Micro List</find>
@@ -60,9 +98,21 @@
       <find>handles</find>
       <find>linktext</find>
       <find>partialLinkText</find>
-      <find>click</find>
       <find>findElement</find>
       <find>assert.equal</find>
+      <find>Visitor search with title containing</find>
+      <find>search with title containing</find>
+      <find>filter1</find>
+      <find>tr.odd:nth-child(2) &gt; td:nth-child(12)</find>
+      <find>getAllWindowHandles</find>
+      <find>By.id</find>
+      <find>page gets open with FMR Analytics and Geographical Stats</find>
+      <find>click on</find>
+      <find>click</find>
+      <find>I am on summary tab of analytics page</find>
+      <find>Graph for past 60 days impressions is visible</find>
+      <find>Analytics by FMR chart is viewable</find>
+      <find>I click on FMR title from Best Performers section</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -110,8 +160,12 @@
         <option value="$PROJECT_DIR$/features/feature/admin_microlist.feature" />
         <option value="$PROJECT_DIR$/features/step_definitions/admin_microlist.js" />
         <option value="$PROJECT_DIR$/features/step_definitions/fmr_report.js" />
+        <option value="$PROJECT_DIR$/features/feature/report_tab.feature" />
         <option value="$PROJECT_DIR$/features/page_object/fmr_report.page.js" />
         <option value="$PROJECT_DIR$/features/feature/fmr_report.feature" />
+        <option value="$PROJECT_DIR$/features/feature/analytics.feature" />
+        <option value="$PROJECT_DIR$/features/step_definitions/analytics.js" />
+        <option value="$PROJECT_DIR$/features/page_object/analytics.page.js" />
       </list>
     </option>
   </component>
@@ -388,7 +442,7 @@
       <workItem from="1493298711743" duration="4000" />
       <workItem from="1493298774803" duration="3193000" />
       <workItem from="1493305178041" duration="22190000" />
-      <workItem from="1493702223921" duration="8511000" />
+      <workItem from="1493702223921" duration="24793000" />
     </task>
     <task id="LOCAL-00001" summary="Added 3 new features for the 3BL Media project.">
       <created>1487056315101</created>
@@ -408,7 +462,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141597000" />
+    <option name="totallyTimeSpent" value="157879000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,7 +475,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1367" y="-18" width="1366" height="741" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1873606" sideWeight="0.6824324" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -430,7 +484,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1873606" sideWeight="0.31756756" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.317817" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28731942" sideWeight="0.49739778" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28731942" sideWeight="0.49739778" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -481,27 +535,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/user_list.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="64" lean-forward="false" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/user.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/nodemailer/lib/smtp-connection/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -648,13 +681,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/page_object/microlist_admin.page.js" />
-    <entry file="file://$PROJECT_DIR$/features/feature/microlist.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="33" column="48" lean-forward="false" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/page_object/login.page.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -687,29 +713,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/microlist.js">
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/fmr_report.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+        <state relative-caret-position="210">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/admin_microlist.js">
+    <entry file="file://$PROJECT_DIR$/features/feature/report_tab.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="79" lean-forward="false" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="79" />
+        <state relative-caret-position="495">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/feature/admin_microlist.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding>
-            <marker date="1493389689000" expanded="true" signature="959:1175" ph="Scenario: Find and Remove email record from email list" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,53 +737,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/feature/report_tab.feature">
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/microlist.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="69" column="45" lean-forward="false" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/page_object/admin_microlist.page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-934">
-          <caret line="34" column="61" lean-forward="false" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/page_object/fmr_report.page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="88" column="5" lean-forward="true" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/page_object/microlist.page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="35" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/fmr_report.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="33" />
+        <state relative-caret-position="-304">
+          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/feature/fmr_report.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="315">
+          <caret line="21" column="33" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="21" selection-end-column="33" />
           <folding>
-            <marker date="1493813970000" expanded="true" signature="595:762" ph="Scenario: Check Week at a glance Analytics" />
+            <marker date="1493884038000" expanded="true" signature="596:760" ph="Scenario: Check Week at a glance Analytics" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/feature/microlist.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/page_object/microlist.page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1144">
+          <caret line="14" column="53" lean-forward="false" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/feature/admin_microlist.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <marker date="1493389689000" expanded="true" signature="959:1175" ph="Scenario: Find and Remove email record from email list" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/page_object/admin_microlist.page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-994">
+          <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/admin_microlist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="32" column="79" lean-forward="false" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/page_object/fmr_report.page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-36">
+          <caret line="25" column="38" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="25" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/analytics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="61" lean-forward="false" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/page_object/analytics.page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="5" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/feature/analytics.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
