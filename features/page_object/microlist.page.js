@@ -12,6 +12,7 @@ var MicrolistPage = {
     SearchList: function (drivers, listName) {
         drivers.findElement(By.id("searchVal")).sendKeys(listName);
         drivers.findElement(By.id(" sub")).click();
+
         var condition = wd.until.elementLocated(By.linkText('My Email Lists'));
         return drivers.wait(condition, 5000);
     },

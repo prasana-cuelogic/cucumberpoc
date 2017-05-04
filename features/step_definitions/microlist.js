@@ -13,7 +13,7 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         return MicrolistPage.open(this.driver);
     });
 
-    When('Visitor find {stringInDoubleQuotes} mircolist', function (arg1) {
+    When('find {stringInDoubleQuotes} mircolist', function (arg1) {
         return MicrolistPage.SearchList(this.driver, arg1);
     });
 
@@ -21,11 +21,11 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         return MicrolistPage.EditList(this.driver);
     });
 
-    Then('Visitor will update list name and description', function () {
+    Then('will update list name and description', function () {
         return MicrolistPage.UpdateList(this.driver);
     });
 
-    When('Visitor find {stringInDoubleQuotes} microlist to delete', function (arg1) {
+    When('find {stringInDoubleQuotes} microlist to delete', function (arg1) {
         return MicrolistPage.SearchList(this.driver, arg1);
     });
 
@@ -37,19 +37,19 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         return MicrolistPage.afterDelete(this.driver);
     });
 
-    When('Visitor click on Add Email List', function () {
+    When('click on Add Email List', function () {
         MicrolistPage.ClickAdd(this.driver);
     });
 
-    Then('Visitor click on Edit Contact List and then Add Contact', function () {
+    Then('click on Edit Contact List and then Add Contact', function () {
         MicrolistPage.ClickAddContact(this.driver);
     });
     
-    Then('Visitor add new contact in list', function () {
+    Then('add new contact in list', function () {
         MicrolistPage.AddContact(this.driver);
     });
 
-    Then('Visitor click on Edit Contact List and remove contact from list', function () {
+    Then('click on Edit Contact List and remove contact from list', function () {
         MicrolistPage.RemoveContact(this.driver);
     })
 });
