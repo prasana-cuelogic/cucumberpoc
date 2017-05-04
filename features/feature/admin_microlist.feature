@@ -3,7 +3,7 @@ Feature: Admin microlist feature
   Background:
     Given I am logged in as admin
 
-  Scenarios for Admin Micro List
+  #Scenarios for Admin Micro List
 
   Scenario: Add new admin email list
     Given I am on admin microlist page
@@ -15,7 +15,7 @@ Feature: Admin microlist feature
     Given I am on admin microlist page
     When find "test" 3BL microlist to delete
     Then click on the detele link
-    Then List get deleted & success message get displayed on micro list page
+    Then list get deleted & redirect on list page
 
 
   Scenario: Edit Email list
@@ -26,14 +26,12 @@ Feature: Admin microlist feature
 
   Scenario: Add new email record to list
     Given I am on admin microlist page
-    When find "test" 3BL mircolist
-    And go to Subscribers list & click on Add Subscriber link
-    Then add new subscriber details
-    And contact get added in the list & sucess message get displayed on the list page.
+    When find "test" 3BL mircolist & go to view subscribers
+    And click on Add Subscriber link & add new subscriber details
+    Then contact get added in the list & sucess message get displayed on the list page
 
   Scenario: Find and Remove email record from email list
     Given I am on admin microlist page
-    When find "test" 3BL mircolist
-    And go to the Subscribers list page.
-    Then remove unwanted subscriber
-    And contact get removed from the list & sucess message get displayed on the list page.
+    When find "test" 3BL mircolist & go to view subscribers
+    Then select unwanted subscriber to remove
+    And contact get removed from the list & sucess message get displayed on the list page
