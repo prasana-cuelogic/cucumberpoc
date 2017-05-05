@@ -13,43 +13,60 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         return MicrolistPage.open(this.driver);
     });
 
-    When('find {stringInDoubleQuotes} mircolist', function (arg1) {
-        return MicrolistPage.SearchList(this.driver, arg1);
-    });
-
-    When('click on edit icon', function () {
-        return MicrolistPage.EditList(this.driver);
-    });
-
-    Then('will update list name and description', function () {
-        return MicrolistPage.UpdateList(this.driver);
-    });
-
-    When('find {stringInDoubleQuotes} microlist to delete', function (arg1) {
-        return MicrolistPage.SearchList(this.driver, arg1);
-    });
-
-    When('click on the detele button and accept', function () {
-        return MicrolistPage.DeleteList(this.driver);
-    });
-
-    Then('microlist get deleted & success message get displayed', function () {
-        return MicrolistPage.afterDelete(this.driver);
-    });
-
+    /* Add new micro list */
     When('click on Add Email List', function () {
         MicrolistPage.ClickAdd(this.driver);
     });
 
-    Then('click on Edit Contact List and then Add Contact', function () {
+    Then('submit form after adding respective details', function () {
+        return MicrolistPage.AddMicroList(this.driver);
+    });
+
+    Then('list get added & success message get displayed on micro list page', function () {
+        return MicrolistPage.ListAdded(this.driver);
+    });
+
+    /* Delete Micro list*/
+    When('find {stringInDoubleQuotes} microlist to delete', function (arg1) {
+        return MicrolistPage.SearcEditEmailListhList(this.driver, arg1);
+    });
+
+    When('click on the detele button', function () {
+        return MicrolistPage.DeleteList(this.driver);
+    });
+
+    Then('microlist get deleted & success message get displayed', function () {
+        return MicrolistPage.AfterDelete(this.driver);
+    });
+
+    /* Edit email list */
+    When('find {stringInDoubleQuotes} mircolist & open for edit', function (arg1) {
+        return MicrolistPage.SearchList(this.driver, arg1);
+    });
+
+    When('after updating all details, I submit form', function () {
+        return MicrolistPage.EditList(this.driver);
+    });
+
+    Then('list get updated & success message get displayed on micro list page', function () {
+        return MicrolistPage.UpdatedList(this.driver);
+    });
+
+    /* Add new email */
+    Then('go to the add contact form', function () {
         MicrolistPage.ClickAddContact(this.driver);
     });
     
-    Then('add new contact in list', function () {
+    Then('submit the form after adding contact details', function () {
         MicrolistPage.AddContact(this.driver);
     });
 
-    Then('click on Edit Contact List and remove contact from list', function () {
+    /* Remove email from list */
+    Then('go to the contact list', function () {
+        MicrolistPage.EditEmailList(this.driver);
+    });
+
+    Then('remove unwanted contact', function () {
         MicrolistPage.RemoveContact(this.driver);
-    })
+    });
 });

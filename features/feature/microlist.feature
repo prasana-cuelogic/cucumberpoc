@@ -13,23 +13,23 @@ Feature: Client microlist feature
   Scenario: Delete email list
     Given I am on client microlist page
     When find "A test" microlist to delete
-    And  click on the detele button and accept
+    And  click on the detele button
     Then microlist get deleted & success message get displayed on micro list page
 
   Scenario: Edit Email list
     Given I am on client microlist page
-    When select "Team" mircolist & open for edit
+    When find "Team" mircolist & open for edit
     Then after updating all details, I submit form
     Then list get updated & success message get displayed on micro list page
 
   Scenario: Add new email record to list
     Given I am on client microlist page
-    When find "Team" mircolist
+    When find "Team" mircolist & open for edit
     And go to the add contact form
     Then submit the form after adding contact details
 
   Scenario: Find and Remove email record from email list
     Given I am on client microlist page
-    When select "Team" mircolist & open for edit
+    When find "Team" mircolist & open for edit
     Then go to the contact list
     And remove unwanted contact
