@@ -4,7 +4,7 @@ Feature: Update or delete client summary report.
   Also able to delete unwanted reports.
 
   Background:
-    Given I am logged in as client
+    Given I am logged in as admin
 
   Scenario: Update data for summary report.
     Given I am on summary report listing
@@ -25,8 +25,8 @@ Feature: Update or delete client summary report.
     And  Click on the view link
     Then Report preview should be open in the new tab
 
-  Scenario: Delete unwated records from list.
-    Given I am on summary report listing
-    When Search summary report
-    And Click on the delete link.
-    Then Redirect on listing page with success message
+#  Scenario: Delete unwated records from list.
+#    Given I am on summary report listing
+#    When Search summary report
+#    And Click on the delete link
+#    Then Redirect on listing page

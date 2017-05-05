@@ -6,9 +6,9 @@ var seleniumWebdriver = require('selenium-webdriver'), By = seleniumWebdriver.By
 
 defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
     setDefaultTimeout(50 * 1000);
-    Given('I am logged in as admin', function () {
+    /*Given('I am logged in as admin', function () {
         return LoginPage.adminLogin(this.driver);
-    });
+    });*/
 
     Given(/^I am on admin microlist page$/, function() {
         return AdminMicrolistPage.openadmin(this.driver);
