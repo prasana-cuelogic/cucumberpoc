@@ -8,12 +8,12 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
     Given('I am logged in as admin', function () {
         return LoginPage.adminLogin(this.driver);
     });
-
+    //Search, filter & Sort Record
     Given(/^I am on admin FMR report page$/, function () {
         return FmrPage.openfmrreport(this.driver);
     });
 
-    When('I search filter and sort fmr list', function () {
+    When('I search fmr from list', function () {
         return FmrPage.serchFmrReport(this.driver);
     });
 
@@ -21,7 +21,8 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         return FmrPage.openReport(this.driver)
     });
 
-    Then('Primary Category and Impressions text visible', function () {
+    //Check Week at a glance Analytics
+    Then('Impressions and Clicks visible on page', function () {
         return FmrPage.checkReport(this.driver)
     });
     
@@ -35,5 +36,14 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
 
     Then('FMR detail page get open', function () {
         return FmrPage.fmrDetails(this.driver)
+    });
+
+    //Check Week at a glance Company Details
+    When('I search company and click on it', function () {
+        return FmrPage.searchCompany(this.driver)
+    });
+
+    Then('Company detail page get open', function () {
+        return FmrPage.companyDetails(this.driver)
     });
 });

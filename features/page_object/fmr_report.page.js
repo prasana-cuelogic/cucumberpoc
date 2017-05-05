@@ -76,6 +76,25 @@ var FmrPage = {
         return drivers.findElement(By.id('fmr-title')).getText().then(function (elem_text) {
             return assert.equal('Kids in the Kitchen', elem_text);
         });
+    },
+
+    searchCompany: function (drivers) {
+        drivers.findElement(By.linkText('Sodexo, Inc.')).then(function(element) {
+            element.click();
+        });
+
+        drivers.getAllWindowHandles().then(function (handles) {
+            drivers.switchTo().window(handles[1]).then(function () {
+                drivers.getTitle().then( function(the_title){
+                    assert.equal("Sodexo, Inc. | 3BL Media", the_title);
+                });
+            });
+        });
+    },
+
+    companyDetails: function (drivers) {
+        var condition = wd.until.elementLocated(By.css('#profile-header-line2>h1'));
+        return drivers.wait(condition, 2000);
     }
 };
 
