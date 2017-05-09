@@ -17,7 +17,7 @@ var RportPage = {
     addEMailAndMessage: function (drivers) {
         drivers.findElement(By.id('email')).sendKeys('prasana.alawekar@cuelogic.co.in');
         drivers.findElement(By.id('msg')).sendKeys('This is BDD testing');
-        drivers.findElement(By.name('submit')).click();
+        return drivers.findElement(By.name('submit')).click();
     },
 
     emailSend: function (drivers) {

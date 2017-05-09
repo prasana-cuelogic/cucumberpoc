@@ -1,3 +1,4 @@
+@report
 Feature: Email Analytic Report to other members.
   As a user of website and having client account.
   I able to login with client username and password
@@ -6,12 +7,13 @@ Feature: Email Analytic Report to other members.
   Background:
     Given I am logged in as client
 
+  @smokeTest
   Scenario: Email analytic summary report pdf.
     Given I am on the report tab
     When I select email option for the analytic report
     And Submit form after adding email and message
     Then email send to given email id
-
+  @smokeTest
   Scenario: Download PDF report
     Given I am on the report tab
     When Select any option from Analytics Summary by Media Type report
@@ -26,13 +28,3 @@ Feature: Email Analytic Report to other members.
     Given I am on the report tab
     When Select summary report
     Then Click on the HTML icon and report get opened in new tab
-
-
-
-
-
-
-
-
-
-

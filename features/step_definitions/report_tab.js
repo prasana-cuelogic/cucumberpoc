@@ -4,7 +4,7 @@ var seleniumWebdriver = require('selenium-webdriver'), By = seleniumWebdriver.By
     {defineSupportCode} = require('cucumber');
 
 defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
-    setDefaultTimeout(40 * 1000);
+    setDefaultTimeout(50 * 1000);
 
     Given('I am on the report tab', function () {
         return ReportPage.open(this.driver);
@@ -15,11 +15,11 @@ defineSupportCode(function ({Given, When, Then, setDefaultTimeout}) {
         return ReportPage.selectReport(this.driver);
     });
 
-    When('Submit form after adding email and message', function (arg1) {
+    When('Submit form after adding email and message', function () {
         return ReportPage.addEMailAndMessage(this.driver);
     });
 
-    Then('email send to given email id', function (arg1) {
+    Then('email send to given email id', function () {
         return ReportPage.emailSend(this.driver);
     });
 

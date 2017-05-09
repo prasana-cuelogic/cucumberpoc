@@ -1,20 +1,22 @@
+@analytics
 Feature: Analytics feature
 
   Background:
     Given I am logged in as client
 
  #Analytics and Report Tab functionality
+    @smokeTest
     Scenario: Testing analytics view page
       Given I am on summary tab of analytics page
       Then Graph for past 60 days impressions is visible
       And section Best Performers is visible
       And Analytics by Media Type chart is viewable
-
+    @smokeTest
     Scenario: Testing Analytics By Media Type page
       Given I am on summary tab of analytics page
       When I click on Media Type and analytics by media type page get open
       Then Analytics by FMR chart is viewable
-
+    @smokeTest
     Scenario: Testing analytics for FMR page
       Given I am on summary tab of analytics page
       When I click on Media Type and analytics by media type page get open
